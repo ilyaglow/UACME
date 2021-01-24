@@ -1,14 +1,14 @@
 /*******************************************************************************
 *
-*  (C) COPYRIGHT AUTHORS, 2017 - 2019
+*  (C) COPYRIGHT AUTHORS, 2020
 *
-*  TITLE:       BYTECODE77.H
+*  TITLE:       AZAGARAMPUR.H
 *
-*  VERSION:     3.17
+*  VERSION:     3.54
 *
-*  DATE:        18 Mar 2019
+*  DATE:        26 Dec 2020
 *
-*  Prototypes and definitions for bytecode77 methods.
+*  Prototypes and definitions for AzAgarampur methods.
 *
 * THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 * ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -18,9 +18,19 @@
 *******************************************************************************/
 #pragma once
 
-NTSTATUS ucmVolatileEnvMethod(
+NTSTATUS ucmNICPoisonMethod(
     _In_ PVOID ProxyDll,
     _In_ DWORD ProxyDllSize);
 
-NTSTATUS ucmSluiHijackMethod(
+NTSTATUS ucmIeAddOnInstallMethod(
+    _In_ PVOID ProxyDll,
+    _In_ DWORD ProxyDllSize);
+
+NTSTATUS ucmWscActionProtocolMethod(
+    _In_ LPWSTR lpszPayload);
+
+NTSTATUS ucmFwCplLuaMethod2(
+    _In_ LPWSTR lpszPayload);
+
+NTSTATUS ucmMsSettignsProtocolMethod(
     _In_ LPWSTR lpszPayload);
